@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apple</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .product {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      border-bottom: 1px solid #ccc;
+    }
+    .product img {
+      width: 200px;
+      height: auto;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+    form {
+      margin-top: 20px;
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 10px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Apple</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome to Apple</h2>
+    <p>Discover the latest Apple products and innovations.</p>
+  </section>
+
+  <section id="products">
+    <div class="product">
+      <img src="iphone.jpg" alt="iPhone">
+      <div>
+        <h2>iPhone</h2>
+        <p>The iPhone is a line of smartphones designed and marketed by Apple Inc.</p>
+      </div>
+    </div>
+    <div class="product">
+      <img src="macbook.jpg" alt="Macbook">
+      <div>
+        <h2>Macbook</h2>
+        <p>The MacBook is a brand of Macintosh laptop computers designed and marketed by Apple Inc.</p>
+      </div>
+    </div>
+    <div class="product">
+      <img src="ipad.jpg" alt="iPad">
+      <div>
+        <h2>iPad</h2>
+        <p>The iPad is a line of tablet computers designed, developed, and marketed by Apple Inc.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Apple</h2>
+    <p>Apple Inc. is an American multinational technology company that designs, develops, and sells consumer electronics, computer software, and online services. It was founded by Steve Jobs, Steve Wozniak, and Ronald Wayne in 1976.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Apple Inc. All rights reserved.</p>
+    <form>
+      <h2>Contact Us</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+      <input type="submit" value="Submit">
+    </form>
+  </footer>
+</body>
+</html>
